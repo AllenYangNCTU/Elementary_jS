@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let save = parseInt(prompt("Save how much", 0));
+        console.log("You have saved " + save + " dollars.");
+        let action = parseInt(prompt("1 or 2", 0));
+        console.log("Action : " + action);
+        switch (action) {
+            case 1:
+                console.log("Withdrawing.....");
+                let withdraw = parseInt(prompt(" Withdraw how much?", 0));
+                console.log("Withdraw total : " + withdraw + " dollars");
+                if (save > withdraw) {
+                    console.log("Success!");
+                    save -= withdraw;
+                }
+                else {
+                    console.log("Failure!");
+                }
+                console.log("You remain " + save + " dollars");
+                break;
+            case 2:
+                console.log("Tranfering.....");
+                let tranferID = parseInt(prompt("account", 0))
+                console.log("account: " + tranferID);
+                let transfer = parseInt(prompt(" transfer how much?", 0));
+                console.log("Transfer total : " + transfer + " dollars");
+
+                if (save > transfer) {
+                    console.log("Success!");
+                    save -= transfer;
+                }
+                else {
+                    console.log("Failure!");
+                }
+                console.log("You remain " + save + " dollars");
+                break;
+            default:
+                break;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
