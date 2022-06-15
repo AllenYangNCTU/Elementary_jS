@@ -19,7 +19,32 @@
             'b': 'bob',
             'c': 'cat'
         }
+
+        const myObj2 = {
+            a: 'a',
+            b: 'b',
+            c: 'c'
+        }
         console.log(myObj);
+        console.log(myObj2);
+        const myArr2 = ['apple', 'banana', 'cat'];
+
+        for (const key in myArr2) {
+            console.log("hello for in");
+            console.log(key);
+            console.log(myArr2[key]);
+        }
+
+        for (const value of myArr2) {
+            console.log("hello for of");
+        }
+
+        let keysObjs = Object.keys(myObj);
+        let valuesObjs = Object.values(myObj);
+        console.log(keysObjs);
+        console.log(valuesObjs);
+
+
     </script>
 </body>
 
