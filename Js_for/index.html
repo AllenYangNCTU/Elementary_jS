@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let sum = 0;
+        // for(let i=1;i<=1000;i++){
+        //     sum += i;
+        // }
+        // // sum = toString(sum);
+        // console.log(sum);
+        let star = 10;
+        for (let i = 0; i < star; i++) {
+            let sum = "*";
+            let space = "";
+            for (let j = 0; j < i; j++) {
+                sum += "**";
+            }
+            for (let k = star - i + 1; k >= 0; k--) {
+                space += " ";
+            }
+            // console.log(space + sum);
+            // document.write(space);
+            document.write(sum);
+            document.write("<br>");
+
+
+        }
+        for (let i = 0; i <= star; i++) {
+            let sum = "*";
+            let space = "  ";
+            for (let j = 0; j < star - i; j++) {
+                sum += "**";
+            }
+            for (let j = 0; j < i; j++) {
+                space += " ";
+            }
+            // console.log(space + sum);
+            // document.write(space);
+            document.write(sum);
+            document.write("<br>");
+        }
+
+    </script>
+</body>
+
+</html>
